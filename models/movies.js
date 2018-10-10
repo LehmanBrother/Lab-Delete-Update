@@ -28,5 +28,7 @@ const movies = [
 		name: "Singin' in the Rain",
 		genre: "Musical",
 		year: 1952
-	},
+	}
 ]
+
+module.exports = movies
