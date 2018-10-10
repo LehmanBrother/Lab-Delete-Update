@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Movies Index</h1>
+	<ul>
+		<% for(let i = 0; i < movies.length; i++) {%>
+			<li>
+				<a href='/movies/<%=i%>'><%= movies[i].name %></a>
+				<form action='/movies/<%=i%>?_method=DELETE' method="POST">
+					<input type="submit" value="delete"/>
+				</form>
+				<a href='/movies/<%=i%>/edit'>Edit</a>
+			</li>
+		<% }%>
+	</ul>
+</body>
+</html>
